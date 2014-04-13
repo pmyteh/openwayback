@@ -121,7 +121,7 @@ public class WarcResource extends Resource {
 		            }
 		        }
 		    }
-		} else if (rectype == WARCRecordType.metadata || rectype == WARCRecordType.resource) {
+		} else if (rectype == WARCRecordType.metadata || rectype == WARCRecordType.resource || rectype == WARCRecordType.conversion) {
 		    status = 200;
 		    headers = new HashMap<String, String>();
 		    String ct = (String)rec.getHeader().getHeaderValue("Content-Type");
